@@ -11,15 +11,15 @@ export default function Home() {
           height={38}
           priority
         />
-        <div>Rules for Jought</div>
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
+        <div>Hi Swan.</div>
+        {/* <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             Write anything that you want.
           </li>
           <li className="tracking-[-.01em]">
             No editing or revising your entries, ever.
           </li>
-        </ol>
+        </ol> */}
       </main>
     </div>
   );
