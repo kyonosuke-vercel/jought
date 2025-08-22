@@ -2,18 +2,50 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans min-h-screen flex flex-col items-center justify-center p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col items-center gap-8">
-        <Image src="/fox.png" alt="fox logo" width={180} height={38} priority />
-        <div className="text-center">Hello Andrej Obradovic.</div>
-        {/* <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Write anything that you want.
-          </li>
-          <li className="tracking-[-.01em]">
-            No editing or revising your entries, ever.
-          </li>
-        </ol> */}
+    <div className="font-sans min-h-screen flex flex-col items-center justify-center p-8 bg-gradient-to-br from-gray-900 to-black">
+      <main className="flex flex-col items-center">
+        <div className="glossy-card relative w-96 h-60 rounded-2xl p-8 flex flex-col justify-between">
+          {/* Card header */}
+          <div className="relative z-10 flex justify-between items-start">
+            <div className="w-12 h-8 bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600 rounded-sm shadow-lg border border-yellow-300/20"></div>
+            <div
+              className="text-white font-bold text-lg tracking-wider drop-shadow-lg"
+              style={{ textShadow: "0 2px 4px rgba(0,0,0,0.5)" }}
+            >
+              JOUGHT
+            </div>
+          </div>
+
+          {/* Fox logo centered */}
+          <div className="absolute inset-0 z-10 flex justify-center items-center">
+            <Image
+              className="red-filter drop-shadow-2xl"
+              src="/phoenix.png"
+              alt="phoenix logo"
+              width={120}
+              height={25}
+              priority
+            />
+          </div>
+
+          {/* Card footer */}
+          <div className="relative z-10 flex justify-between items-end">
+            <div
+              className="text-white text-sm font-medium"
+              style={{ textShadow: "0 1px 3px rgba(0,0,0,0.5)" }}
+            >
+              Andrej Obradovic
+            </div>
+            <div className="text-gray-200 text-xs font-bold tracking-wider"></div>
+          </div>
+        </div>
+
+        {/* Animated text */}
+        <div className="mt-8">
+          <div className="typewriter text-white text-lg font-medium">
+            Follow the Paper Trail
+          </div>
+        </div>
       </main>
     </div>
   );
